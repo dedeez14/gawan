@@ -1,0 +1,100 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+*.log
+logs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Build directories
+build/
+dist/
+
+# Temporary files
+tmp/
+temp/
+
+# Load test results
+loadtest_results_*.json
+
+# Performance monitoring data
+performance_*.json
+monitoring_*.log
+
+# Security test results
+pentest_results_*.json
+security_scan_*.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache files
+*.cache
+
+# Backup files
+*.bak
+*.backup
+
+# Documentation build
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node modules (if using any JS tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Air live reload
+tmp/

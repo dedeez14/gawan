@@ -1,0 +1,84 @@
+# GitHub Pages Configuration for Gowan Framework
+title: "Gowan Framework"
+description: "Framework Golang Terbaru - High-Performance Web Framework untuk Go"
+url: "https://dedeez14.github.io"
+baseurl: "/gawan"
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+author:
+  name: "Gowan Framework Team"
+  email: "support@gowan.dev"
+
+social:
+  name: "Gowan Framework"
+  links:
+    - "https://github.com/dedeez14/gawan"
+    - "https://twitter.com/GowanFramework"
+
+# Navigation
+header_pages:
+  - index.md
+  - docs/getting-started.md
+  - docs/api-reference.md
+  - docs/examples.md
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+incremental: false
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .git/
+  - .github/
+  - cmd/
+  - internal/
+  - "*.go"
+  - go.mod
+  - go.sum
+
+# Include files
+include:
+  - _pages
+  - docs
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "page"
+      sidebar: true
+
+# Syntax highlighting
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true

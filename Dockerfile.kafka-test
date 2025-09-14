@@ -1,0 +1,61 @@
+# Dockerfile untuk pengujian Kafka dengan Go
+FROM golang:1.24-alpine AS builder
+
+# Install dependencies
+RUN apk add --no-cache git ca-certificates tzdata
+
+# Set working directory
+WORKDIR /app
+
+# Copy go mod files
+COPY go.mod go.sum ./
+
+# Download dependencies
+RUN go mod download
+
+# Copy source code
+COPY . .
+
+# Build the application
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o kafka-test-app ./test
+
+# Build test binary
+RUN go test -c ./test -o kafka-performance-test
+
+# Final stage
+FROM alpine:latest
+
+# Install runtime dependencies
+RUN apk --no-cache add ca-certificates curl bash
+
+# Create app directory
+WORKDIR /app
+
+# Create results directory
+RUN mkdir -p /app/results
+
+# Copy binaries from builder
+COPY --from=builder /app/kafka-test-app .
+COPY --from=builder /app/kafka-performance-test .
+
+# Copy test files
+COPY test/ ./test/
+
+# Copy scripts
+COPY run-kafka-docker-test.sh ./
+RUN chmod +x run-kafka-docker-test.sh
+
+# Set environment variables
+ENV KAFKA_BROKERS=kafka:29092
+ENV KAFKA_TOPIC_PREFIX=docker-test
+ENV GO_ENV=docker
+ENV TEST_MESSAGE_COUNT=100
+ENV TEST_BATCH_SIZE=10
+ENV TEST_CONCURRENCY=5
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:8081/health || exit 1
+
+# Default command
+CMD ["/bin/sh", "-c", "./run-kafka-docker-test.sh"]
