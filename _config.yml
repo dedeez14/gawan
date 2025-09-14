@@ -1,8 +1,8 @@
 # GitHub Pages Configuration for Gowan Framework
 title: "Gowan Framework"
 description: "Framework Golang Terbaru - High-Performance Web Framework untuk Go"
-url: "https://dedeez14.github.io"
-baseurl: "/gawan"
+url: "https://dedeez14.github.io/gawan"
+baseurl: ""
 
 # Theme
 theme: minima

@@ -1,0 +1,241 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <h1>🚀 Gowan Framework</h1>
+            <p class="hero-subtitle">Framework Golang Terbaru - High-Performance Web Framework untuk Go</p>
+            
+            <div class="badges">
+                <img src="https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat-square&logo=go" alt="Go Version">
+                <img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License">
+                <img src="https://img.shields.io/badge/Status-Active-brightgreen.svg?style=flat-square" alt="Status">
+                <img src="https://img.shields.io/github/stars/dedeez14/gawan?style=flat-square" alt="GitHub Stars">
+            </div>
+        </header>
+
+        <section class="features">
+            <h2>🌟 Mengapa Memilih Gowan?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>⚡ Performa Tinggi</h3>
+                    <p>Dioptimalkan untuk kecepatan dengan benchmark hingga 50,000+ RPS</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Keamanan Terdepan</h3>
+                    <p>Built-in security middleware dengan RBAC dan input validation</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛠️ Developer Friendly</h3>
+                    <p>Hot reload, comprehensive CLI tools, dan dokumentasi lengkap</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-start">
+            <h2>🚀 Quick Start</h2>
+            <div class="code-block">
+                <pre><code># Install Gowan CLI
+go install github.com/dedeez14/gawan/cmd/gawan@latest
+
+# Create new project
+gawan new myapp
+cd myapp
+
+# Run development server
+gawan dev</code></pre>
+            </div>
+        </section>
+
+        <section class="performance">
+            <h2>📊 Performance Benchmarks</h2>
+            <div class="benchmark-grid">
+                <div class="benchmark-card">
+                    <h4>Throughput</h4>
+                    <p class="metric">52,341 RPS</p>
+                </div>
+                <div class="benchmark-card">
+                    <h4>Latency (P99)</h4>
+                    <p class="metric">2.1ms</p>
+                </div>
+                <div class="benchmark-card">
+                    <h4>Memory Usage</h4>
+                    <p class="metric">12MB</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="documentation">
+            <h2>📚 Dokumentasi</h2>
+            <div class="doc-links">
+                <a href="docs/getting-started.html" class="doc-link">🚀 Getting Started</a>
+                <a href="docs/api-reference.html" class="doc-link">📖 API Reference</a>
+                <a href="docs/examples.html" class="doc-link">💡 Examples</a>
+                <a href="https://github.com/dedeez14/gawan" class="doc-link">📦 GitHub Repository</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Gowan Framework. Licensed under MIT License.</p>
+            <p>Built with ❤️ for the Go community</p>
+        </footer>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .features, .quick-start, .performance, .documentation {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-grid, .benchmark-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .feature-card, .benchmark-card {
+            padding: 1.5rem;
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .code-block {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            overflow-x: auto;
+        }
+
+        .code-block pre {
+            margin: 0;
+        }
+
+        .code-block code {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .doc-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .doc-link {
+            display: block;
+            padding: 1rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .doc-link:hover {
+            background: #5a67d8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: white;
+            opacity: 0.8;
+        }
+
+        h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .feature-grid, .benchmark-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
