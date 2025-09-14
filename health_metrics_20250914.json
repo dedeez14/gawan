@@ -1197,5 +1197,159 @@
     "memory_usage_mb": 11.89453125,
     "uptime_seconds": 1090,
     "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:34:19.5892721+07:00",
+    "avg_response_time_ms": 10.178181818181818,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1100,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:34:29.5897432+07:00",
+    "avg_response_time_ms": 10.185585585585585,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1110,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:34:39.5935659+07:00",
+    "avg_response_time_ms": 10.188392857142857,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1120,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:34:49.5922258+07:00",
+    "avg_response_time_ms": 10.189380530973452,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1130,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:34:59.5913259+07:00",
+    "avg_response_time_ms": 10.174561403508772,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1140,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:35:09.5947945+07:00",
+    "avg_response_time_ms": 10.191304347826087,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1150,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:35:19.5940599+07:00",
+    "avg_response_time_ms": 10.201724137931034,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1160,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:35:29.5856495+07:00",
+    "avg_response_time_ms": 10.183760683760683,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1170,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:35:39.586486+07:00",
+    "avg_response_time_ms": 10.162711864406779,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1180,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:35:49.5951786+07:00",
+    "avg_response_time_ms": 10.197478991596638,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1190,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:35:59.5912+07:00",
+    "avg_response_time_ms": 10.221666666666666,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1200,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:36:09.5908499+07:00",
+    "avg_response_time_ms": 10.246280991735537,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1210,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:36:19.5875907+07:00",
+    "avg_response_time_ms": 10.238524590163934,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1220,
+    "health_score": 100
+  },
+  {
+    "status": "HEALTHY",
+    "timestamp": "2025-09-14T14:36:29.5941372+07:00",
+    "avg_response_time_ms": 10.239024390243902,
+    "success_rate_percent": 100,
+    "requests_per_minute": 59,
+    "error_count": 0,
+    "memory_usage_mb": 11.89453125,
+    "uptime_seconds": 1230,
+    "health_score": 100
   }
 ]
